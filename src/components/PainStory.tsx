@@ -75,7 +75,7 @@ export const PainStory: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <XCircle className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
-                  <span><strong className="text-white font-bold">Personal informal sin ARL:</strong> grave riesgo jurídico y laboral para la administración ante cualquier accidente.</span>
+                  <span><strong className="text-white font-bold">Personal informal:</strong> grave riesgo para la administración.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <XCircle className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
