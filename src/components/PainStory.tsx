@@ -109,15 +109,15 @@ export const PainStory: React.FC = () => {
               <ul className="space-y-4 text-sm sm:text-base text-slate-100">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong className="text-white font-bold">Cotización Unificada y una Sola Logística:</strong> un solo contrato formal, factura electrónica y póliza de cumplimiento.</span>
+                  <span><strong className="text-white font-bold">Cotización Unificada y una Sola Logística:</strong> un solo contrato y una sola Coordinación.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong className="text-white font-bold">Director de producción in situ:</strong> un profesional coordina minuto a minuto sonido, shows, luces y entrega de alimentos.</span>
+                  <span><strong className="text-white font-bold">Director de producción in sitio:</strong> un experto coordina minuto a minuto sonido, shows, luces y entrega de alimentos.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong className="text-white font-bold">Staff 100% verificado:</strong> planillas de ARL al día, carné de manipulación y protocolo de seguridad industrial.</span>
+                  <span><strong className="text-white font-bold">Staff 100% identicado:</strong> carné de staff y cargo asignado.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
