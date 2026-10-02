@@ -69,7 +69,7 @@ export const ComparisonAnchor: React.FC = () => {
           </div>
 
           <div className="bg-slate-950 p-4 border-t border-slate-700 text-sm text-slate-200 flex flex-col sm:flex-row items-center justify-between gap-2 font-medium">
-            <span>✓ Todos los contratos incluyen póliza de cumplimiento y soporte operativo in situ.</span>
+            <span>✓ Todos los contratos incluyen soporte operativo in sitio.</span>
             <span className="text-orange-400 font-bold">100% coordinado por nuestro equipo</span>
           </div>
         </div>
