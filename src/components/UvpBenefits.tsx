@@ -1,4 +1,4 @@
-import React from 'react';
+tificadoimport React from 'react';
 import { Users, Shield, Sliders, CheckCircle2, Clock, FileText, Music2, Sparkles, Utensils, HeartHandshake } from 'lucide-react';
 
 export const UvpBenefits: React.FC = () => {
@@ -60,11 +60,11 @@ export const UvpBenefits: React.FC = () => {
             </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 font-heading">3. Seguridad Institucional</h3>
             <p className="text-slate-100 text-base leading-relaxed mb-5">
-              Tranquilidad jurídica total para la administración: <strong className="text-white font-bold">ARL vigente de cada integrante</strong>, protocolo de manipulación de alimentos con registro Invima y póliza de cumplimiento.
+              Tranquilidad total para la administración: <strong className="text-white font-bold">Coordinación de cada integrante</strong>del equipo, y procesos operativos estandarizados que garantizan un servicio seguro y confiable.
             </p>
             <div className="text-sm text-emerald-200 font-semibold flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Cero contingencias laborales o legales</span>
+              <span>Cero contingencias Logisticas</span>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ export const UvpBenefits: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-bold text-white mb-1 font-heading">Personal Uniformado & ARL</h4>
                   <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
-                    Staff debidamente identificado con carné institucional, dotación profesional y planillas de aportes al día enviadas previamente.
+                    Staff debidamente identificado con carné institucional y dotación.
                   </p>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export const UvpBenefits: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-bold text-white mb-1 font-heading">Alimentos Certificados</h4>
                   <p className="text-sm sm:text-base text-slate-200 leading-relaxed font-normal">
-                    Golosinas de primeras marcas con registro Invima y estaciones de crispetas/algodón operadas con normas estrictas de bioseguridad.
+                    Golosinas de primeras y estaciones de crispetas/algodón operadas con normas estrictas de bioseguridad.
                   </p>
                 </div>
               </div>
