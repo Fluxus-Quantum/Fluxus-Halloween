@@ -4,8 +4,20 @@ import { CONTACT_INFO } from '../data/eventData';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0A0E1A] text-slate-300 text-sm border-t border-slate-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <footer className="relative bg-[#0F172A] text-slate-300 text-sm border-t border-slate-800 overflow-hidden">
+      {/* Fondo festivo temático claramente visible con colores vivos y detalle de Halloween */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <img
+          src="/src/assets/images/outdoor_halloween_bg_1790979835731.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center opacity-55 filter brightness-105 saturate-150"
+          referrerPolicy="no-referrer"
+        />
+        {/* Capa sólida y oscura con #0F172A para garantizar 100% legibilidad y contraste */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/90 via-[#0F172A]/75 to-[#0F172A]/95"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand Col */}
           <div className="md:col-span-2 space-y-3">
@@ -58,6 +70,11 @@ export const Footer: React.FC = () => {
               <li>
                 <a href="#faq" className="hover:text-white transition-colors">
                   Preguntas Frecuentes
+                </a>
+              </li>
+              <li>
+                <a href="#contacto" className="text-orange-400 font-semibold hover:text-white transition-colors">
+                  Formulario de Contacto
                 </a>
               </li>
             </ul>

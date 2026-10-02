@@ -4,7 +4,7 @@ import { CONTACT_INFO, getWhatsAppBookingLink } from '../data/eventData';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 bg-gradient-to-b from-[#0F172A] via-[#1E1B4B]/80 to-[#0F172A] border-b border-slate-800">
+    <section className="relative overflow-hidden pt-8 pb-16 md:pt-14 md:pb-24 bg-gradient-to-b from-[#0F172A]/70 via-[#1E1B4B]/70 to-[#0F172A] border-b border-slate-800">
       {/* Subtle festive ambient glow circles */}
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-purple-700/20 rounded-full blur-[120px] pointer-events-none -z-0" />
       <div className="absolute top-40 right-10 w-[300px] h-[300px] bg-orange-600/15 rounded-full blur-[100px] pointer-events-none -z-0" />

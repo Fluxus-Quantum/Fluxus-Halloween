@@ -6,8 +6,20 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0F172A]/90 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-[#0F172A] border-b border-slate-800 shadow-md relative overflow-hidden">
+      {/* Fondo festivo temático claramente visible con opacidad aumentada y tonos vivos */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <img
+          src="/src/assets/images/outdoor_halloween_bg_1790979835731.jpg"
+          alt=""
+          className="w-full h-full object-cover object-top opacity-55 filter brightness-105 saturate-150"
+          referrerPolicy="no-referrer"
+        />
+        {/* Capa protectora con degradado #0F172A para legibilidad perfecta */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-[#0F172A]/90 backdrop-blur-[1px]"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex items-center justify-between h-18">
           {/* Zone 1: Single text element wordmark */}
           <a
@@ -69,7 +81,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile nav dropdown */}
       {mobileMenuOpen && (
-        <div className="sm:hidden bg-[#1E293B] border-b border-slate-700 px-4 pt-3 pb-5 space-y-3">
+        <div className="sm:hidden bg-[#0F172A] border-b border-slate-700 px-4 pt-3 pb-5 space-y-3 relative z-20">
           <a
             href="#historia"
             onClick={() => setMobileMenuOpen(false)}

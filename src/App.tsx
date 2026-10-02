@@ -16,11 +16,28 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0F172A] text-slate-100 flex flex-col font-sans selection:bg-orange-500 selection:text-white">
-      {/* Top Bar Contract (Wordmark, Nav links, Action) */}
-      <Navbar />
+    <div className="min-h-screen bg-[#0F172A] text-slate-100 flex flex-col font-sans selection:bg-orange-500 selection:text-white relative">
+      {/* Fondo festivo de celebración de Halloween al aire libre (transparente, colorido y coherente) */}
+      <div 
+        className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
+        aria-hidden="true"
+      >
+        <img
+          src="/src/assets/images/outdoor_halloween_bg_1790979835731.jpg"
+          alt="Fiesta de Halloween al aire libre"
+          className="w-full h-full object-cover object-top opacity-30 filter brightness-115 saturate-150"
+          referrerPolicy="no-referrer"
+        />
+        {/* Capa de gradiente sutil para garantizar máxima legibilidad y armonía visual */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/50 via-[#0F172A]/80 to-[#0F172A]"></div>
+      </div>
 
-      <main className="flex-1">
+      {/* Top Bar Contract (Wordmark, Nav links, Action) */}
+      <div className="relative z-10">
+        <Navbar />
+      </div>
+
+      <main className="flex-1 relative z-10">
         {/* Bloques 1 & 2: Hero Section */}
         <Hero />
 
@@ -56,7 +73,9 @@ export default function App() {
       </main>
 
       {/* Bloque 18: Footer Completo */}
-      <Footer />
+      <div className="relative z-10">
+        <Footer />
+      </div>
 
       {/* Botón Sticky Flotante de WhatsApp */}
       <FloatingWhatsApp />
