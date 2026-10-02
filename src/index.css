@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+}
+
+/* Subtle glowing accent utilities for festive elegant mood */
+.glow-purple {
+  box-shadow: 0 0 40px -10px rgba(109, 40, 217, 0.35);
+}
+
+.glow-orange {
+  box-shadow: 0 0 40px -10px rgba(234, 88, 12, 0.35);
+}
+
+.glow-whatsapp {
+  box-shadow: 0 10px 30px -5px rgba(34, 197, 94, 0.45);
+}
+
