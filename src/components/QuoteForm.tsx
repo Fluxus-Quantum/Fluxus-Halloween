@@ -11,13 +11,8 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ initialAudience = 'ph' }) 
     entityName: '',
     entityType: initialAudience === 'ph' ? 'Propiedad Horizontal (Conjunto Residencial)' : 'Empresa / Corporativo',
     contactName: '',
-    role: '',
     email: '',
     phone: '',
-    date: '',
-    attendees: '100',
-    location: 'Bogotá',
-    services: 'Sistema Halloween Integral 360°',
     notes: '',
   });
 
@@ -193,20 +188,6 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ initialAudience = 'ph' }) 
                   />
                 </div>
 
-                <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                    Cargo o Rol en la Entidad
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.role}
-                    onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                    placeholder="Ej. Administrador, Comité de Convivencia, RRHH"
-                    className="w-full px-4 py-3 rounded-xl bg-[#0B1326] border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#7C3AED] transition-colors"
-                  />
-                </div>
-              </div>
-
               {/* Row 3: Email & Phone */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
@@ -236,75 +217,6 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({ initialAudience = 'ph' }) 
                     className="w-full px-4 py-3 rounded-xl bg-[#0B1326] border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#7C3AED] transition-colors"
                   />
                 </div>
-              </div>
-
-              {/* Row 4: Event Details */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                    Fecha Tentativa (Octubre)
-                  </label>
-                  <input
-                    type="date"
-                    value={formData.date}
-                    onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#0B1326] border border-slate-700 text-white text-sm focus:outline-none focus:border-[#7C3AED]"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                    Asistentes Estimados
-                  </label>
-                  <select
-                    value={formData.attendees}
-                    onChange={(e) => setFormData({ ...formData, attendees: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#0B1326] border border-slate-700 text-white text-sm focus:outline-none focus:border-[#7C3AED]"
-                  >
-                    <option value="50-100">50 a 100 personas</option>
-                    <option value="100-200">100 a 200 personas</option>
-                    <option value="200-350">200 a 350 personas</option>
-                    <option value="350-500">350 a 500 personas</option>
-                    <option value="500+">Más de 500 personas</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                    Zona o Localidad
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.location}
-                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                    placeholder="Ej. Bogotá Norte, Salitre, Chía"
-                    className="w-full px-4 py-3 rounded-xl bg-[#0B1326] border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#7C3AED]"
-                  />
-                </div>
-              </div>
-
-              {/* Service Interest */}
-              <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
-                  Módulos o Paquetes de Interés *
-                </label>
-                <select
-                  value={formData.services}
-                  onChange={(e) => setFormData({ ...formData, services: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl bg-[#0B1326] border border-slate-700 text-white text-sm focus:outline-none focus:border-[#7C3AED]"
-                >
-                  <option value="Sistema Halloween Integral 360°">
-                    Sistema Halloween Integral 360° (Solución Llave en Mano Completa)
-                  </option>
-                  <option value="Pack 1: Recreación y Shows">Pack 1: Recreación y Shows</option>
-                  <option value="Pack 2: Montaje Técnico y Ambientación">
-                    Pack 2: Montaje Técnico y Ambientación
-                  </option>
-                  <option value="Pack 3: Estaciones de Comida y Souvenirs">
-                    Pack 3: Estaciones de Comida y Souvenirs
-                  </option>
-                  <option value="Personalizado a Medida">Personalizado a Medida</option>
-                </select>
               </div>
 
               {/* Notes */}
