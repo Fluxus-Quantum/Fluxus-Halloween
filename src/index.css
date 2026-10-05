@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  
+  --color-brand-violet: #7C3AED;
+  --color-brand-violet-light: #9333EA;
+  --color-brand-orange: #F97316;
+  --color-brand-orange-light: #FB923C;
+  --color-brand-green: #22C55E;
+  --color-brand-green-hover: #16A34A;
+  --color-brand-dark: #0B1326;
+  --color-brand-surface: #101B35;
+  --color-brand-card: #152243;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0B1326;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-outfit);
+}
+
+.glow-purple {
+  box-shadow: 0 0 50px -10px rgba(124, 58, 237, 0.35);
+}
+
+.glow-orange {
+  box-shadow: 0 0 50px -10px rgba(249, 115, 22, 0.35);
+}
+
+.glow-green {
+  box-shadow: 0 10px 30px -5px rgba(34, 197, 94, 0.45);
+}
+
+/* Custom scrollbar for horizontal carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
